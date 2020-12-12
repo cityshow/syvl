@@ -34,7 +34,7 @@ async def exit(ctx):
 	print(f"Bye, {client.user}.")
 	sys.exit()
 
-client.run(Token, bot = False)
+client.run(token, bot = False)
 
 # To Do:
 # Add Channel ID
