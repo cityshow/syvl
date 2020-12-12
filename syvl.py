@@ -2,6 +2,7 @@ import discord
 import sys
 
 from discord.ext import commands
+from config.py import *
 
 if str(sys.argv[1]) == "log-all":
 	print("All Message Logging Set To True.")
@@ -33,7 +34,7 @@ async def exit(ctx):
 	print(f"Bye, {client.user}.")
 	sys.exit()
 
-client.run("Token-Here", bot = False)
+client.run(Token, bot = False)
 
 # To Do:
 # Add Channel ID
