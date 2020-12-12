@@ -8,5 +8,5 @@ Git clone the repository by using `git clone https://github.com/cityshow/syvl.gi
 
 *why is it giving me "event loop is closed"?*
 
-You have not entered a real token.
+You have not entered a real token. Please enter your token in `config.py`
 
