@@ -53,26 +53,7 @@ async def editlog(before, after):
 			print("Message Edit Detected In Direct Messages.\n\n\n")
 			print(f"Full Message Contents Being {message.content}, And Message ID Being {message.id}.")
 			print(f"Message From User {message.author}, Message author ID being {message.author.id}.")
-			print(f"Message Sent At {message.created_at}.\n\n\n")
-@client.listen("on_message")
-async def GarlicBread(message):
-	if "garlic bread" in message.content.lower() and message.author != client.user:
-		print("Garlic Bread Detected")
-		try:
-			print(f"Message From User {message.author}, Message author ID being {message.author.id}.")
-			print(f"Full Message Contents Being {message.content}, and message ID being {message.id}.")
-			print(f"Message Sent In Guild {message.guild}, Guild ID being {message.guild.id}.")
-			print(f"Message Sent In Channel {message.channel}, Channel ID Being {message.channel.id}.")
-			print(f"Message Sent At {message.created_at}.\n\n\n")
-			await message.channel.send("Mmmmm, Garlic Bread")
-			await asyncio.sleep(1)
-		except:
-			print("Garlic Bread Detected In Direct Messages.\n\n\n")
-			print(f"Full Message Contents Being {message.content}, And Message ID Being {message.id}.")
-			print(f"Message From User {message.author}, Message author ID being {message.author.id}.")
-			print(f"Message Sent At {message.created_at}.\n\n\n")
-			await message.channel.send("Mmmmm, Garlic Bread")
-			await asyncio.sleep(1)
+			print(f"Message Sent At {message.created_at}.\n\n\n"
 
 @commands.command()
 async def exit(ctx):
