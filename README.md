@@ -8,5 +8,7 @@ Git clone the repository by using `git clone https://github.com/cityshow/syvl.gi
 
 *why is it giving me "event loop is closed"?*
 
-You have not entered a real token. Please enter your token in `config.py`
+You may have either entered an invalid token, or didn't edit the file 'config.py'. All you have to do is replace the message in between the quotes with a valid token, and then run the program.
 
+*What can it do?*
+Syvl has an option to aswell log edited messages, which can be turned on and off by using the command line arguments. (`python3 syvl.py True/False`)
